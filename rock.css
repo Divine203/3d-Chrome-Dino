@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+div{
+	transform-style: preserve-3d;
+}
+
+.rock-cont div{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: linear-gradient(darkgrey, grey);
+}
+
+.front-rock{}
+.back-rock{
+	transform: translateZ(-20px);
+}
+.left-rock{
+	left: -20px;
+	transform: rotateY(-90deg);
+	transform-origin: right;
+}
+.right-rock{
+	left: 20px;
+	transform: rotateY(90deg);
+	transform-origin: left;
+}
+.top-rock{
+	top: -20px;
+	transform: rotateX(90deg);
+	transform-origin: bottom;
+}
+.bottom-rock{
+	top: 20px;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+
+}

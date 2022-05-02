@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bird</title>
+	<link rel="stylesheet" href="bird.css">
+</head>
+<body>
+	<div class="bird-cont">
+		<div class="bird-head"></div>
+		<div class="bird">
+			<div class="front-bird"></div>
+			<div class="back-bird"></div>
+				<div class="back-bird2">
+					<div class="wing2">
+						<div class="wingB"></div>
+					</div>
+				</div>
+			<div class="left-bird"></div>
+			<div class="right-bird"></div>
+			<div class="top-bird"></div>
+			<div class="bottom-bird"></div>
+		</div>
+		<div class="wings">
+				<div class="wing1">
+					<div class="wingA"></div>
+				</div> 
+		</div>
+		<div class="bird-legs">
+			<div class="bird-leg1"></div>
+			<div class="bird-leg2"></div>
+		</div>
+
+		<div class="bird-shadow"></div>
+	</div>
+</body>
+<style type="text/css">
+	.bird-cont{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: rotate 10s infinite 0s;
+	}
+	@keyframes rotate{
+		0%{
+			transform: rotateX(-3deg) rotateY(0deg);
+		}
+		50%{
+			transform: rotateX(-3deg) rotateY(360deg);
+		}
+		100%{
+			transform: rotateX(-3deg) rotateY(0deg);
+		}
+}
+.bird-head{
+	position: relative;
+	top: 10px;
+}
+
+.bird-shadow{
+	width: 100px;
+	height: 20px;
+	background: rgb(58, 58, 58);
+	position: relative;
+	left: -10px;
+	top: 200px;
+	border-radius: 100%;
+	transform: rotateX(90deg);
+	/*filter: blur(6em);*/
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;				
+}
+</style>
+</html>

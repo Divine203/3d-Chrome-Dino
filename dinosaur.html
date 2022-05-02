@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="dinosaur.css">
+	<link rel="stylesheet" href="player.css">
+	<link rel="stylesheet" href="cactus1.css">
+	<link rel="stylesheet" href="cactus2.css">
+	<link rel="stylesheet" href="cactus3.css">
+	<link rel="stylesheet" href="cactus4.css">
+	<link rel="stylesheet" href="cactus5.css">
+	<link rel="stylesheet" href="cactus6.css">
+	<link rel="stylesheet" href="bird.css">
+	<link rel="stylesheet" href="rock.css">
+
+	<link rel="stylesheet" href="alert.css">
+	<title>dinosaur game</title>
+</head>
+<body>
+
+<div class="ui-wrapper">
+	<div class="ui-cont">
+		<div class="score-cont">
+			<p class="score-text">
+				HIGH SCORE:<span class="high-score">0</span>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SCORE: <span class="score">0</span>
+			</p>
+		</div>		
+	</div>
+</div>
+
+
+	<!-- <div class="end-cont">
+		<div class="end-text">
+			<h1>Congrats &nbsp;you &nbsp;just &nbsp;completed &nbsp;the &nbsp;first &nbsp;stage</h1>
+			<p>Now &nbsp;moving &nbsp;on &nbsp;to &nbsp;the &nbsp;next...</p>
+		</div>
+	</div> -->
+
+
+<!-- <div class="alert-wrapper">
+	<div class="alert-cont"> 
+		<div class="alert">
+			<h1>GAME OVER</h1>
+			<p>score: <span class="score-result">0</span></p>
+			<button class="alert-btn ok">RESTART</button>
+			<button class="alert-btn cancel">CANCEL</button>
+		</div>
+	</div>
+</div> -->
+
+	<div class="sun"></div>
+
+	
+	<div class="canvas">
+		<div class="player">
+			<div class="player-cont">
+				<div class="dino-head">
+					<div class="hair">
+						<div class="hair-front"></div>
+						<div class="hair-back"></div>
+						<div class="hair-left"></div>
+						<div class="hair-right"></div>
+						<div class="hair-top"></div>
+					</div>
+					<div class="head">
+						<div class="front-head">
+							<div class="eye1"></div>
+						</div>
+						<div class="back-head">
+							<div class="eye2"></div>
+						</div>
+						<div class="left-head"></div>
+						<div class="right-head"></div>
+						<div class="top-head"></div>
+					</div>
+					<div class="mouth">
+						<div class="front-mouth"></div>
+						<div class="back-mouth"></div>
+						<div class="left-mouth"></div>
+					</div>
+					<div class="lips">
+						<div class="front-lips"></div>
+						<div class="back-lips"></div>
+						<div class="left-lips"></div>
+						<div class="right-lips"></div>
+						<div class="top-lips"></div>
+					</div>
+				</div>
+		<div class="steps">
+			<div class="back-step1">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step2">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step3">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step4">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step5">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step6">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step7">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step8">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step9">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step10">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step11">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step12">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step13">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step14">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step16">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step17">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step18">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="leg4 run4">
+				<div class="back-step19">
+					<div class="front-step"></div>
+					<div class="back-step"></div>
+					<div class="left-step"></div>
+					<div class="right-step"></div>
+					<div class="top-step"></div>
+					<div class="bottom-step"></div>
+				</div>
+				<div class="back-step21">
+					<div class="front-step"></div>
+					<div class="back-step"></div>
+					<div class="left-step"></div>
+					<div class="right-step"></div>
+					<div class="top-step"></div>
+					<div class="bottom-step"></div>
+				</div>
+			</div>
+			<div class="leg3 run3">
+				<div class="back-step23">
+					<div class="front-step"></div>
+					<div class="back-step"></div>
+					<div class="left-step"></div>
+					<div class="right-step"></div>
+					<div class="top-step"></div>
+					<div class="bottom-step"></div>
+				</div>
+				<div class="back-step24">
+					<div class="front-step"></div>
+					<div class="back-step"></div>
+					<div class="left-step"></div>
+					<div class="right-step"></div>
+					<div class="top-step"></div>
+					<div class="bottom-step"></div>
+				</div>
+			</div>
+			<div class="back-step26">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step27">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step28">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+			<div class="back-step29">
+				<div class="front-step"></div>
+				<div class="back-step"></div>
+				<div class="left-step"></div>
+				<div class="right-step"></div>
+				<div class="top-step"></div>
+				<div class="bottom-step"></div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+		<div class="dino-shadow"></div>
+		<div class="cactus1">
+<!-- 			<div class="cactus1-cont">
+		<div class="block_cactus1">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus2">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus3">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus4">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus5">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus6">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="block_cactus7">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+	</div> -->
+			<!-- <div class="front-cactus1"></div>
+			<div class="back-cactus1"></div>
+			<div class="left-cactus1"></div>
+			<div class="right-cactus1"></div>
+			<div class="top-cactus1"></div> -->
+
+			<div class="cactus1-cont">
+		<div class="cactus1B block_cactus1">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus2">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus3">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus4">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus5">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus6">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+		<div class="cactus1B block_cactus7">
+			<div class="front-cactus"></div>
+			<div class="back-cactus"></div>
+			<div class="left-cactus"></div>
+			<div class="right-cactus"></div>
+			<div class="top-cactus"></div>
+			<div class="bottom-cactus"></div>
+		</div>
+
+		<div class="cactus1-shadow"></div>
+	</div>
+		</div>
+		<div class="cactus2">
+			<div class="cactus2-cont">
+				<div class="joinA">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow"></div>
+				</div>
+				<div class="joinB">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow special-shadow-2"></div>
+				</div>
+				<div class="joinC">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow special-shadow-2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cactus3">
+			<div class="cactus2-cont">
+				<div class="joinA">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow"></div>
+				</div>
+				<div class="joinB">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow special-shadow-2"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cactus4">
+			<div class="cactus2-cont">
+				<div class="joinA">
+					<div class="cactus2B block-cactus1">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus2">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus3">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus4">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus5">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus6">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2B block-cactus7">
+						<div class="front-cactus"></div>
+						<div class="back-cactus"></div>
+						<div class="left-cactus"></div>
+						<div class="right-cactus"></div>
+						<div class="top-cactus"></div>
+						<div class="bottom-cactus"></div>
+					</div>
+					<div class="cactus2-shadow"></div>
+				</div>
+			</div>
+		</div>
+		<div class="cactus5">
+			<div class="cactus1-cont">
+		<div class="joinA">
+			<div class="cactus1B block_cactus1">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus2">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus3">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus4">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus5">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus6">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus7">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+
+			<div class="cactus1-shadow"></div>
+		</div>
+		<div class="joinB">
+			<div class="cactus1B block_cactus1">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus2">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus3">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus4">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus5">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus6">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1B block_cactus7">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="cactus1-shadow special-shadow-1"></div>
+
+		</div>
+			</div>
+</div>
+<div class="cactus6">
+		<div class="cactus1-cont">
+		<div class="joinA">
+			<div class="block_cactus1">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus2">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus3">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus4">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus5">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus6">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+			<div class="block_cactus7">
+				<div class="front-cactus"></div>
+				<div class="back-cactus"></div>
+				<div class="left-cactus"></div>
+				<div class="right-cactus"></div>
+				<div class="top-cactus"></div>
+				<div class="bottom-cactus"></div>
+			</div>
+		</div>
+	</div>
+	<div class="cactus1-shadow"></div>
+</div>
+
+<div class="_birdA">
+	<div class="bird-cont">
+		<div class="bird-head"></div>
+		<div class="bird">
+			<div class="front-bird"></div>
+			<div class="back-bird"></div>
+				<div class="back-bird2">
+					<div class="wing2">
+						<div class="wingB"></div>
+					</div>
+				</div>
+			<div class="left-bird"></div>
+			<div class="right-bird"></div>
+			<div class="top-bird"></div>
+			<div class="bottom-bird"></div>
+		</div>
+		<div class="wings">
+				<div class="wing1">
+					<div class="wingA"></div>
+				</div>
+		</div>
+		<div class="bird-legs">
+			<div class="bird-leg1"></div>
+			<div class="bird-leg2"></div>
+		</div>
+	</div>
+
+	<div class="bird-shadow"></div>
+</div>
+
+<div class="_birdB">
+	<div class="bird-cont">
+		<div class="bird-head"></div>
+		<div class="bird">
+			<div class="front-bird"></div>
+			<div class="back-bird"></div>
+				<div class="back-bird2">
+					<div class="wing2">
+						<div class="wingB"></div>
+					</div>
+				</div>
+			<div class="left-bird"></div>
+			<div class="right-bird"></div>
+			<div class="top-bird"></div>
+			<div class="bottom-bird"></div>
+		</div>
+		<div class="wings">
+				<div class="wing1">
+					<div class="wingA"></div>
+				</div>
+		</div>
+		<div class="bird-legs">
+			<div class="bird-leg1"></div>
+			<div class="bird-leg2"></div>
+		</div>
+	</div>
+
+	<div class="bird-shadow special-shadow-3"></div>
+</div>
+
+
+
+		<div class="ground">
+			<div class="ground2"></div>
+			<div class="ground3"></div>
+			<div class="ground4"></div>
+			<div class="ground5"></div>
+			<div class="ground6"></div>
+			<div class="ground7"></div>
+		</div>
+	</div>
+
+
+
+</body>
+<script src="dinosaur.js"></script>
+
+
+</html>

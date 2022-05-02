@@ -1,0 +1,47 @@
+div{
+	transform-style: preserve-3d;
+}
+
+.alert-cont{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.alert-wrapper{
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	background: #111;
+	opacity: 0;
+}
+
+.show{
+	animation: showA .1s linear forwards 0s;
+}
+@keyframes showA{
+	from{opacity: 0}
+	to{opacity: 0.8}
+}
+
+.alert{
+	text-align: center;
+	font-size: 3rem;
+}
+
+.alert h1{
+	color: #fff;
+}
+
+.alert p{
+	color: #ccc;
+
+}
+
+.alert-btn{
+	padding: 1em 2em;
+	border: 0;
+	background: #fff;
+	color: #000;
+}

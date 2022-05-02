@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rock</title>
+	<link rel="stylesheet" href="rock.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="rock-cont">
+			<div class="front-rock"></div>
+			<div class="back-rock"></div>
+			<div class="left-rock"></div>
+			<div class="right-rock"></div>
+			<div class="top-rock"></div>
+			<div class="bottom-rock"></div>
+		</div>
+	</div>
+</body>
+<style type="text/css">
+	.wrapper{
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		animation: rotate 10s infinite 0s;
+	}
+	@keyframes rotate{
+		0%{
+			transform: rotateX(3deg) rotateY(0deg);
+		}
+		50%{
+			transform: rotateX(-3deg) rotateY(360deg);
+		}
+		100%{
+			transform: rotateX(3deg) rotateY(0deg);
+		}
+	}
+
+</style>
+</html>

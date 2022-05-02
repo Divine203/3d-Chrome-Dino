@@ -1,0 +1,185 @@
+body{
+	/*background: red;*/
+}
+
+div{
+	transform-style: preserve-3d;
+}
+
+	.bird-head{
+		width: 35px;
+		height: 35px;
+		background: #000;
+		clip-path: polygon(100% 0, 0 100%, 100% 100%);
+		position: absolute;
+		top: -20px;
+		transform: translateZ(-20px);
+	}
+
+		.bird-legs div{
+			position: absolute;
+			background: #000;
+			width: 50px;
+			height: 20px;
+			clip-path: polygon(0 32%, 0 65%, 50% 57%, 100% 100%, 100% 81%, 67% 57%, 100% 59%, 100% 43%, 67% 45%, 100% 20%, 100% 0, 50% 42%);
+		}
+			.bird-leg1{
+				left: 100px;
+				top: 10px;
+				transform: rotate(10deg);
+			}
+			.bird-leg2{
+				left: 100px;
+				top: 10px;
+				transform: rotate(10deg) translateZ(-30px);
+			}
+
+.bird div{
+	position: absolute;
+}
+.front-bird{
+	width: 100px;
+	height: 30px;
+	background: #000;
+	clip-path: polygon(0 54%, 100% 0, 100% 100%, 0% 100%);
+}
+.back-bird{
+	width: 100px;
+	height: 30px;
+	background: #111;
+	clip-path: polygon(0 54%, 100% 0, 100% 100%, 0% 100%);
+	transform: translateZ(-30px);
+}
+.back-bird2{
+	width: 100px;
+	height: 30px;
+	transform: translateZ(-30px);
+}
+.top-bird{
+	width: 100px;
+	height: 30px;
+	top: -22px;
+	background: #111;
+	transform: rotate(-10deg) rotateX(90deg);
+	transform-origin: bottom;
+}
+.bottom-bird{
+	width: 100px;
+	height: 30px;
+	top: 30px;
+		background: #000;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+}
+.left-bird{
+	width: 30px;
+	height: 15px;
+	top: 15px;
+	left: -30px;
+		background: #000;
+	transform: rotateY(-90deg);
+	transform-origin: right;
+}
+.right-bird{
+	width: 30px;
+	height: 30px;
+	left: 100px;
+		background: #111;
+	transform: rotateY(90deg);
+	transform-origin: left;
+}
+
+.wings div{
+	position: absolute;
+}
+
+	.wing1{
+		width: 30px;
+		height: 40px;
+		background: #111;
+		left: 30px;
+		top: 20px;
+		transform: rotateX(90deg);
+		transform-origin: top;
+		animation: wingI 1s infinite 0s;
+	}
+	@keyframes wingI{
+		0%{
+			transform: rotateX(90deg);
+		}
+		50%{
+			transform: rotateX(140deg);
+		}
+		100%{
+			transform: rotateX(90deg);
+		}
+	}
+
+		.wingA{
+			width: 30px;
+			height: 30px;
+			background: #000;
+			top: 40px;
+			transform: rotateX(-90deg);
+			transform-origin: top;
+			animation: wingA 1s infinite 0s;
+		}
+		@keyframes wingA{
+			0%{
+				transform: rotateX(-80deg);
+			}
+			50%{
+				transform: rotateX(80deg);
+			}
+			100%{
+				transform: rotateX(-80deg);
+			}
+
+		}
+	.wing2{
+		width: 30px;
+		height: 40px;
+		background: #111;
+		position: absolute;
+		top: -20px;
+		left: 30px;
+		transform: rotateX(90deg);
+		transform-origin: bottom;
+		animation: wingII 1s infinite 0s;
+	}
+	@keyframes wingII{
+		0%{
+			transform: rotateX(90deg);
+		}
+		50%{
+			transform: rotateX(40deg);
+		}
+		100%{
+			transform: rotateX(90deg);
+		}
+	}
+
+
+		.wingB{
+			width: 30px;
+			height: 30px;
+			background: #000;
+			position: absolute;
+			top: -30px;
+			transform: rotateX(90deg);
+			transform-origin: bottom;
+			animation: wingB 1s infinite 0s;
+		}
+		@keyframes wingB{
+			0%{
+				transform: rotateX(80deg);
+			}
+			50%{
+				transform: rotateX(-80deg);
+			}
+			100%{
+				transform: rotateX(80deg);
+			}
+
+
+

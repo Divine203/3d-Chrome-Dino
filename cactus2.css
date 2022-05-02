@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: rgb(197, 196, 196);
+}
+
+div{
+	transform-style: preserve-3d;
+}
+
+.cactus2{
+	transform: rotateY(0deg);
+}
+
+.block-cactus1 div{
+	/*background: #111;*/
+	position: absolute;
+}
+.block-cactus2 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus2{
+		position: absolute;
+		left: 20px;
+	}
+
+.block-cactus3 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus3{
+		position: absolute;
+		left: 40px;
+	}
+
+.block-cactus4 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus4{
+		position: absolute;
+		top: 30px;
+		left: 30px;
+		transform: rotate(90deg);
+	}
+.block-cactus5 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus5{
+		position: absolute;
+		top: 30px;
+		left: 50px;
+		transform: rotate(90deg);
+	}
+
+.block-cactus6 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus6{
+		position: absolute;
+		left: 20px;
+		top: -20px;
+	}
+.block-cactus7 div{
+	/*background: #111;*/
+	position: absolute;
+}
+	.block-cactus7{
+		position: absolute;
+		left: 20px;
+		top:  40px;
+	}
+
+.cactus2B .front-cactus{
+	width: 10px;
+	height: 30px;
+	background: #000;
+}
+.cactus2B .back-cactus{
+	width: 10px;
+	height: 30px;
+	transform: translateZ(-10px);
+	background: #111;
+}
+.cactus2B .left-cactus{
+	width: 10px;
+	height: 30px;
+	left: -10px;
+	transform: rotateY(-90deg);
+	transform-origin: right;
+	background: #111;
+}
+.cactus2B .right-cactus{
+	width: 10px;
+	height: 30px;
+	left: 10px;
+	transform: rotateY(90deg);
+	transform-origin: left;
+	background: #000;
+}
+.cactus2B .top-cactus{
+	width: 10px;
+	height: 10px;
+	top: -10px;
+	transform: rotateX(90deg);
+	transform-origin: bottom;
+	background: #000;
+}
+.cactus2B .bottom-cactus{
+	width: 10px;
+	height: 10px;
+	top: 30px;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+	background: #111;
+}
+
+.joinA{
+	position: relative;
+	/*top: 0px;*/
+}
+.joinB{
+	position: relative;
+	left: 100px;
+	transform: rotateY(90deg);
+}
+.joinC{
+	position: relative;
+	left: 150px;
+	transform: rotateY(90deg);
+}
+

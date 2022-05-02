@@ -1,0 +1,823 @@
+body{
+	margin: 0;
+	/*background: #fff;*/
+}
+
+div{
+	transform-style: preserve-3d;
+}
+
+.player-cont{
+	position: relative;
+	top: 0px;
+/*	animation: rotate 10s infinite 0s;
+}
+@keyframes rotate{
+	0%{
+		transform: rotateX(-10deg) rotateY(0deg);
+	}
+	50%{
+		transform: rotateX(10deg) rotateY(360deg);
+	}
+	100%{
+		transform: rotateX(-10deg) rotateY(0deg);
+	}	*/
+}
+
+.player-cont div{
+	position: absolute;
+}
+
+/*.hair div{
+	background: linear-gradient(#111, #111);
+}*/
+
+		.hair-front{
+			width: 75px;
+			height: 10px;
+			top: -10px;
+			left: 15px;
+			background: #000;
+		}
+		.hair-back{
+			width: 75px;
+			height: 10px;
+			top: -10px;
+			left: 15px;
+			transform: translateZ(-70px);
+			background: #111;
+		}
+		.hair-left{
+			width: 70px;
+			height: 10px;
+			top: -10px;
+			left: -55px;
+			transform: rotateY(-90deg);
+			transform-origin: right;
+			background: #000;
+		}
+		.hair-right{
+			width: 70px;
+			height: 10px;
+			top: -10px;
+			left: 90px;
+			transform: rotateY(90deg);
+			transform-origin: left;
+			background: #000;
+		}
+		.hair-top{
+			width: 75px;
+			height: 70px;
+			top: -80px;
+			left: 15px;
+			transform: rotateX(90deg);
+			transform-origin: bottom;
+			background: #111;
+		}
+/*
+.head div{
+	background: linear-gradient(#111, #111);
+}*/
+
+	.front-head{
+		width: 100px;
+		height: 50px;
+		background: #000;
+	}
+		.eye1{
+			width: 10px;
+			height: 10px;
+			background: #000;
+			/*border-radius: 100%;*/
+			border: 1px solid #fff;
+			position: relative;
+			top: 5px;
+			left: 30px;
+		}
+		.eye2{
+			width: 10px;
+			height: 10px;
+			background: #111;
+			/*border-radius: 100%;*/
+			border: 1px solid #fff;
+			position: relative;
+			top: 5px;
+			left: 30px;
+		}
+		
+		.open-eye{
+			border: 5px solid #fff;
+		}
+	.back-head{
+		width: 100px;
+		height: 50px;
+		transform: translateZ(-70px);
+		background: #111;
+	}
+	.left-head{
+		width: 70px;
+		height: 50px;
+		left: -70px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+		background: #000;
+	}
+	.right-head{
+		width: 70px;
+		height: 50px;
+		left: 100px;
+		transform: rotateY(90deg);
+		transform-origin: left;
+		background: #000;
+	}
+	.top-head{
+		width: 100px;
+		height: 70px;
+		top: -70px;
+		transform: rotateX(90deg);
+		transform-origin: bottom;
+		background: #111;
+	}
+
+.mouth{
+	top: 50px;
+}
+/*
+.mouth div{
+	background: linear-gradient(#111, #111);
+}
+*/
+	.front-mouth{
+		width: 55px;
+		height: 15px;
+		background: #000;
+	}
+	.back-mouth{
+		width: 55px;
+		height: 15px;
+		transform: translateZ(-70px);
+		background: #111;
+	}
+	.left-mouth{
+		width: 70px;
+		height: 15px;
+		left: -70px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+		background: #000;
+	}
+
+.lips{
+	top: 65px;
+}
+
+/*.lips div{
+	background: linear-gradient(#111, #111);
+}*/
+
+	.front-lips{
+		width: 80px;
+		height: 15px;
+		background: #000;
+	}
+	.back-lips{
+		width: 80px;
+		height: 15px;
+		transform: translateZ(-70px);
+		background: #111;
+	}
+	.left-lips{
+		width: 70px;
+		height: 15px;
+		left: -70px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+		background: #000;
+	}
+	.right-lips{
+		width: 70px;
+		height: 15px;
+		left: 80px;
+		transform: rotateY(90deg);
+		transform-origin: left;
+		background: #000;
+	}
+	.top-lips{
+		width: 70px;
+		height: 70px;
+		top: -70px;
+		transform: rotateX(90deg);
+		transform-origin: bottom;
+		background: #000;
+	}
+
+.back-step1{
+	top: 80px;
+}
+.back-step2{
+	top: 95px;
+	left: -15px;
+}
+.back-step3{
+	top: 110px;
+	left: -30px;
+}
+.back-step4{
+	top: 125px;
+	left: -45px;
+}
+.back-step5{
+	top: 140px;
+	left: -70px;
+}
+.back-step6{
+	top: 140px;
+	left: -85px;
+	transform: rotate(90deg);
+}
+.back-step7{
+	top: 125px;
+	left: -100px;
+	transform: rotate(90deg);
+}
+.back-step8{
+	top: 100px;
+	left: -115px;
+	transform: rotate(90deg);
+}
+	.back-step8 .front-step{
+		width: 70px;
+	}
+	.back-step8 .back-step{
+		width: 70px;
+	}
+	.back-step8 .bottom-step{
+		width: 70px;
+	}
+	.back-step8 .right-step{
+		left: 55px;
+	}
+.back-step9{
+	top: 155px;
+	left: -70px;
+}
+.back-step10{
+	top: 170px;
+	left: -70px;
+}
+.back-step11{
+	top: 110px;
+	left: 40px;
+	transform: rotate(90deg);
+}
+	.back-step11 .front-step{
+		width: 70px;
+	}
+	.back-step11 .back-step{
+		width: 70px;
+	}
+	.back-step11 .top-step{
+		width: 70px;
+	}
+	.back-step11 .bottom-step{
+		width: 70px;
+	}
+	.back-step11 .right-step{
+		left: 55px;
+	}
+
+.back-step12{
+	top: 125px;
+	left: 25px;
+	transform: rotate(90deg);
+}
+	.back-step12 .front-step{
+		width: 70px;
+	}
+	.back-step12 .back-step{
+		width: 70px;
+	}
+	.back-step12 .top-step{
+		width: 70px;
+	}
+	.back-step12 .bottom-step{
+		width: 70px;
+	}
+	.back-step12 .right-step{
+		left: 55px;
+	}
+.back-step13{
+	top: 140px;
+	left: 10px;
+	transform: rotate(90deg);
+}	
+	.back-step13 .front-step{
+		width: 60px;
+	}
+	.back-step13 .back-step{
+		width: 60px;
+	}
+	.back-step13 .top-step{
+		width: 60px;
+	}
+	.back-step13 .bottom-step{
+		width: 60px;
+	}
+	.back-step13 .right-step{
+		left: 45px;
+	}
+
+.back-step14{
+	top: 145px;
+	left: -5px;
+	transform: rotate(90deg);
+}
+	.back-step14 .front-step{
+		height: 25px;
+	}
+	.back-step14 .back-step{
+		height: 25px;
+	}
+	.back-step14 .right-step{
+		height: 25px;
+	}
+
+.back-step15{
+	top: 190px;
+	left: -5px;
+	transform: rotate(90deg);
+}
+	.back-step15 .top-step{
+		height: 25px;
+		top: -25px;
+	}
+	.back-step15 .bottom-step{
+		height: 25px;
+	}
+	.back-step15 .right-step{
+		width: 25px;
+	}
+	.back-step15 .back-step{
+		transform: translateZ(-25px);
+	}
+.back-step22{
+	top: 190px;
+	left: -5px;
+	transform: rotate(90deg) translateZ(-45px);
+}
+	.back-step22 .top-step{
+		height: 25px;
+		top: -25px;
+	}
+	.back-step22 .bottom-step{
+		height: 25px;
+	}
+	.back-step22 .right-step{
+		width: 25px;
+	}
+	.back-step22 .left-step{
+		width: 25px;
+	}
+	.back-step22 .back-step{
+		transform: translateZ(-25px);
+	}
+
+.back-step16{
+	top: 160px;
+	left: -20px;
+	background: red;
+	transform: rotate(90deg);
+}
+.back-step17{
+	top: 160px;
+	left: -45px;
+	transform: rotate(90deg);
+}
+.back-step18{
+	top: 175px;
+	left: -60px;
+	transform: rotate(90deg);
+}
+	.back-step18 .top-step{
+		height: 25px;
+		top: -25px;
+	}
+	.back-step18 .bottom-step{
+		height: 25px;
+	}
+	.back-step18 .right-step{
+		width: 25px;
+	}
+	.back-step18 .back-step{
+		transform: translateZ(-25px);
+	}
+.back-step19{
+	top: 190px;
+	left: -75px;
+	transform: rotate(90deg);
+}
+	.back-step19 .top-step{
+		height: 25px;
+		top: -25px;
+	}
+	.back-step19 .bottom-step{
+		height: 25px;
+	}
+	.back-step19 .right-step{
+		width: 25px;
+	}
+	.back-step19 .back-step{
+		transform: translateZ(-25px);
+	}
+
+.back-step23{
+	top: 190px;
+	left: -75px;
+	transform: rotate(90deg) translateZ(-45px);
+}
+	.back-step23 .top-step{
+		height: 25px;
+		top: -25px;
+	}
+	.back-step23 .bottom-step{
+		height: 25px;
+	}
+	.back-step23 .right-step{
+		width: 25px;
+	}
+	.back-step23 .left-step{
+		width: 25px;
+		left: 25px;
+	}
+	.back-step23 .back-step{
+		transform: translateZ(-25px);
+	}
+
+
+.back-step21{
+	top: 230px;
+	left: -75px;
+}
+	.back-step21 .front-step{
+		width: 35px;
+	}
+	.back-step21 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step21 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step21 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step21 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step21 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+ 
+.back-step24{
+	top: 230px;
+	left: -75px;
+	transform: translateZ(-45px);
+}
+	.back-step24 .front-step{
+		width: 35px;
+	}
+	.back-step24 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step24 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step24 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step24 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step24 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+
+.back-step20{
+	top: 230px;
+	left: -5px;
+}
+	.back-step20 .front-step{
+		width: 35px;
+	}
+	.back-step20 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step20 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step20 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step20 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step20 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+.back-step25{
+	top: 230px;
+	left: -5px;
+	transform: translateZ(-45px);
+}
+	.back-step25 .front-step{
+		width: 35px;
+	}
+	.back-step25 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step25 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step25 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step25 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step25 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+.back-step26{
+	top: 110px;
+	left: 45px;
+}
+	.back-step26 .front-step{
+		width: 35px;
+	}
+	.back-step26 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step26 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step26 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step26 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step26 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+.back-step27{
+	top: 110px;
+	left: 45px;
+	transform: translateZ(-45px);
+}
+	.back-step27 .front-step{
+		width: 35px;
+	}
+	.back-step27 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step27 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step27 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step27 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step27 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+.back-step28{
+	top: 125px;
+	left: 75px;
+	transform: rotate(90deg);
+}
+	.back-step28 .front-step{
+		width: 35px;
+	}
+	.back-step28 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step28 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step28 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step28 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step28 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+.back-step29{
+	top: 125px;
+	left: 75px;
+	transform: rotate(90deg) translateZ(-45px);
+}
+	.back-step29 .front-step{
+		width: 35px;
+	}
+	.back-step29 .back-step{
+		width: 35px;
+		transform: translateZ(-25px);
+	}
+	.back-step29 .top-step{
+		width: 35px;
+		height: 25px;
+		top: -25px;
+	}
+	.back-step29 .bottom-step{
+		width: 35px;
+		height: 25px;
+	}
+	.back-step29 .left-step{
+		width: 25px;
+		left: -40px;
+	}
+	.back-step29 .right-step{
+		left: 20px;
+		width: 25px;
+	}
+
+
+
+/*.back-step1 div{
+	background: linear-gradient(#111, #111);
+}
+
+.steps div{
+	background: linear-gradient(#111, #111);
+}*/
+
+
+	.front-step{
+		width: 55px;
+		height: 15px;
+		left: -15px;
+		background: #000;
+	}
+	.back-step{
+		width: 55px;
+		height: 15px;
+		left: -15px;
+		transform: translateZ(-70px);
+		background: #111;
+	}
+	.left-step{
+		width: 70px;
+		height: 15px;
+		left: -85px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+		background: #000;
+	}
+	.right-step{
+		width: 70px;
+		height: 15px;
+		left: 40px;
+		transform: rotateY(90deg);
+		transform-origin: left;
+		background: #000;
+	}
+	.top-step{
+		width: 55px;
+		height: 70px;
+		left: -15px;
+		top: -70px;
+		transform: rotateX(90deg);
+		transform-origin: bottom;
+		background: #111;
+	}
+	.bottom-step{
+		width: 55px;
+		height: 70px;
+		left: -15px;
+		top: 15px;
+		transform: rotateX(-90deg);
+		transform-origin: top;
+		background: #000;
+	}
+
+
+	/************** RUN ANIMATION ************/
+
+.run3{
+	transform-origin: right;
+	left: 30px;
+	animation: legC .3s infinite 0s;
+}
+@keyframes legC{
+	0%{
+		transform: rotate(0deg);
+		top: 0px;
+	}
+	50%{
+		transform: rotate(10deg);
+		top: -35px;
+	}
+	100%{
+		transform: rotate(0deg);
+		top: 0px;
+	}
+}
+.run4{
+	transform-origin: right;
+	left: 30px;
+	animation: legD .3s infinite .2s;
+}
+@keyframes legD{
+	0%{
+		transform: rotate(0deg);
+		top: 0px;
+	}
+	50%{
+		transform: rotate(10deg);
+		top: -35px;
+	}
+	100%{
+		transform: rotate(0deg);
+		top: 0px;
+	}
+}
+
+.jump1{
+	top: 240px;
+	left: 150px;
+	transform: rotate(80deg);
+}
+
+.jump2{
+	top: 70px;
+	left: -150px;
+	transform: rotate(-80deg);
+}
+
+
+/********* dino shadow ************/
+
+/*.dino-shadow{
+	width: 100px;
+	height: 100px;
+	background: #111;
+	position: relative;
+	left: 590px;
+	top: 245px;
+	transform: rotateX(90deg);
+	transform-origin: top;
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;
+}*/

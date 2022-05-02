@@ -1,0 +1,416 @@
+@font-face{
+	font-family: ArcadeClassic;
+	src: url('arcadeClassic/arcade.TTF');
+}
+
+:root{
+	--obstaclePos: 1000px;
+}
+
+.ui-wrapper{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+	.ui-cont{
+		width: 40%;
+		height: 100vh;
+		background: red;
+	}
+
+body{
+	padding: 0;
+	margin: 0 auto;
+	background: rgb(197, 196, 196);
+	font-family: ArcadeClassic;
+	overflow: hidden;
+	overflow-x: 0;
+}
+
+.dark{
+	background: rgb(33, 33, 33);
+	animation: dark-sky 2s linear forwards 0s;
+}
+@keyframes dark-sky{
+	from{background: rgb(197, 196, 196)}
+	to{background: #111;}
+}
+
+.light{
+	animation: light-sky 2s linear forwards 0s;
+}
+@keyframes light-sky{
+	from{background: #111}
+	to{background: rgb(197, 196, 196)}
+}
+
+
+div{
+	/*border: 2px solid green;*/
+	transform-style: preserve-3d;
+}
+
+.sun{
+	width: 50px;
+	height: 50px;
+	background: #fff;
+	border-radius: 100%;
+	position: absolute;
+	top: 40px;
+	left: 300px;
+	box-shadow: 0 0 10px #fff,
+			0 0 20px #fff,
+			0 0 30px #fff;
+
+}
+
+.moon{
+	animation: moon 2s linear forwards 0s;
+}
+@keyframes moon{
+	from{background: #fff}
+	to{background: linear-gradient(to right, rgb(33, 33, 33), #fff)}
+}
+
+.to-sun{
+	animation: sun 2s linear forwards 0s;
+}
+@keyframes sun{
+	from{background: linear-gradient(to right, rgb(33, 33, 33), #fff);}
+	to{background: #fff}
+}
+.canvas{
+	transform: rotateY(40deg);
+	perspective: 3000px;
+	animation: rotate 20s infinite 0s;
+}
+
+.score-cont{
+	position: absolute;
+	top: 0px;
+	text-align: center;	
+	width: 100%;
+
+}
+
+
+	.score-text{
+		color: #fff;
+		text-align: center;
+		font-family: ArcadeClassic; 
+		font-size: 2em;	
+		/*margin-top: 100px;*/
+	}
+		.score{
+			
+		}
+@keyframes rotate{
+	0%{
+		transform: rotateX(-10deg) rotateY(40deg);
+	}
+	50%{
+		transform: rotateX(-10deg) rotateY(50deg);
+	}
+	100%{
+		transform: rotateX(-10deg) rotateY(40deg);
+	}
+}
+
+.player{
+	/*border: 2px solid red;*/
+	width: 200px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	/*align-items: center;*/
+	position: absolute;
+	top: 250px;
+	left: 100px;
+}
+
+	.duck{
+		position: absolute;
+		top: 60px;
+		left: 60px;
+	}
+
+	.front-player{
+		width: 50px;
+		height: 100px;
+		background: linear-gradient(black, #111);
+		position: absolute;
+		top: 0px;
+	}
+	.back-player{
+		width: 50px;
+		height: 100px;
+		background: linear-gradient(black, #111);
+		position: absolute;
+		top: 0px;
+		transform: translateZ(-50px);
+	}
+	.left-player{
+		width: 50px;
+		height: 100px;
+		background: linear-gradient(black, #111);
+		position: absolute;
+		top: 0px;
+		left: -50px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+	}
+	.right-player{
+		width: 50px;
+		height: 100px;
+		background: linear-gradient(black, #111);
+		position: absolute;
+		top: 0px;
+		left: 50px;
+		transform: rotateY(90deg);
+		transform-origin: left;
+	}
+
+
+.cactus1{
+	border: 2px solid green;
+	position: absolute;
+	top: 350px;
+	left: var(--obstaclePos);
+}
+
+
+/*	.front-cactus1{
+		width: 100px;
+		height: 100px;
+		background: linear-gradient(red, orange);
+		position: absolute;
+		top: 0px;
+	}*/
+	/*.back-cactus1{
+		position: absolute;
+		top: 0px;
+		transform: translateZ(-100px);
+	}
+	.left-cactus1{
+		position: absolute;
+		top: 0px;
+		left: -100px;
+		transform: rotateY(-90deg);
+		transform-origin: right;
+	}
+	.right-cactus1{
+		position: absolute;
+		top: 0px;
+		left: 100px;
+		transform: rotateY(90deg);
+		transform-origin: left;
+	}
+*/
+.cactus2{
+	position: absolute;
+	top: 400px;
+	left: var(--obstaclePos);
+}
+.cactus3{
+	position: absolute;
+	top: 400px;
+	left: var(--obstaclePos);
+}
+.cactus4{
+	position: absolute;
+	top: 400px;
+	left: var(--obstaclePos);
+}
+.cactus5{
+	position: absolute;
+	top: 350px;
+	left: var(--obstaclePos);
+}
+.cactus6{
+	position: absolute;
+	top: 350px;
+	left: var(--obstaclePos);
+}
+
+
+._birdA{
+	position: absolute;
+	top: 260px;
+	left: var(--obstaclePos);
+}
+._birdB{
+	position: absolute;
+	top: 230px;
+	left: var(--obstaclePos);
+}	
+
+.ground{
+	width: 2000px;
+	height: 600px;
+	background: #fff;
+	position: relative;
+	top: 200px;
+	transform: rotateX(90deg);
+}
+
+	.ground-dark{
+		animation: ground-dark 2s linear forwards 0s;
+	}
+	@keyframes ground-dark{
+		from{background: #fff;}
+		to{background: rgb(130, 130, 130);}
+	}
+
+	.ground-light{
+		animation: ground-light 2s linear forwards 0s;
+	}
+	@keyframes ground-light{
+		from{background: rgb(130, 130, 130)}
+		to{background: #fff}
+	}
+
+.ground div{
+	position: absolute;
+}
+
+.ground2{
+	width: 2500px;
+	height: 1000px;
+	top: -1000px;
+	left: -500px;
+	background: #fff;
+}
+.ground3{
+	width: 600px;
+	height: 600px;
+	top: 0px;
+	left: -600px;
+	background: #fff;
+}
+.ground4{
+	width: 2500px;
+	height: 1000px;
+	top: 600px;
+	background: #fff;
+}
+.ground5{
+	width: 1600px;
+	height: 600px;
+	top: 0px;
+	left: 2000px;
+	background: #fff;
+}
+.ground6{
+	width: 1600px;
+	height: 1000px;
+	top: -1000px;
+	left: 2000px;
+	background: #fff;
+}
+.ground7{
+	width: 600px;
+	height: 600px;
+	top: 600px;
+	left: -600px;
+	background: #fff;
+}
+
+
+/*********** lighting and shadows ************/
+.bird-shadow{
+	width: 100px;
+	height: 20px;
+	background: #000;
+	position: relative;
+	left: -10px;
+	top: 218px;
+	border-radius: 100%;
+	transform: rotateX(90deg);
+	/*filter: blur(6em);*/
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;				
+}
+	.special-shadow-3{
+		top: 250px;
+	}
+
+.dino-shadow{
+	width: 100px;
+	height: 100px;
+	background: #000;
+	border-radius: 30%;
+	position: absolute;
+	left: 80px;
+	top: 480px;
+	transform: rotateX(90deg);
+	transform-origin: top;
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;
+}
+
+.cactus1-shadow{
+	width: 20px;
+	height: 100px;
+	background: black;
+	position: absolute;
+	top: 140px;
+	left: 0px;
+	border-radius: 20%;
+	transform: rotateX(90deg);
+	transform-origin: top;
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;
+}
+
+	.special-shadow-1{
+		transform: rotate(90deg) rotateY(90deg);
+	}
+
+.cactus2-shadow{
+	width: 10px;
+	height: 40px;
+	background: #000;
+	position: absolute;
+	left: 20px;
+	top: 70px;
+	transform: rotateX(90deg);
+	transform-origin: top;
+	box-shadow: 0 0 10px #000,
+				0 0 20px #000,
+				0 0 30px #000;
+}	
+
+	.special-shadow-2{
+		transform: rotate(90deg) rotateY(90deg);
+	}
+
+.end-cont{
+	width: 100%;
+	height: 100vh;
+	background: #000;
+	position: absolute;
+	z-index: 1;
+	/*text-align: center;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	/*opacity: 0;*/
+}
+.end-text{
+	text-align: center;
+}
+.end-cont h1{
+	
+}
+.end-cont p{
+	font-size: 1.4em;
+}
+

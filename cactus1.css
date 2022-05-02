@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	padding: 0;
+	transform-style: preserve-3d;
+	background: rgb(130, 130, 130);
+}
+
+div{
+	transform-style: preserve-3d;
+}
+
+.block_cactus1{
+	position: relative;
+	transform: rotate(90deg);	
+}
+.block_cactus2{
+	position: relative;
+	left: 60px;
+	transform: rotate(90deg);	
+}
+.block_cactus3{
+	position: relative;
+	top: 60px;	
+}
+.block_cactus4{
+	position: relative;
+	top: 60px;
+	left: -20px;	
+}
+.block_cactus5{
+	position: relative;
+	top: 80px;
+	left: 30px;
+	transform: rotate(90deg);
+}
+.block_cactus6{
+	position: relative;
+	top: 0px;
+	left: 30px;
+	transform: rotate(90deg);
+}
+.block_cactus7{
+	position: relative;
+	top: -20px;
+	left: 30px;
+	transform: rotate(90deg);
+}
+
+.cactus1-cont{
+	position: relative;
+	top: 0px;
+}
+.cactus1B .front-cactus{
+	width: 60px;
+	height: 20px;
+	background: #000;
+	position: absolute;
+	top: 0px;
+}
+.cactus1B .back-cactus{
+	width: 60px;
+	height: 20px;
+	background: #111;
+	position: absolute;
+	top: 0px;
+	transform: translateZ(-20px);
+}
+.cactus1B .left-cactus{
+	width: 20px;
+	height: 20px;
+	background: #111;
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	transform: rotateY(-90deg);
+	transform-origin: right;
+}
+.cactus1B .right-cactus{
+	width: 20px;
+	height: 20px;
+	background: #000;
+	position: absolute;
+	top: 0px;
+	left: 60px;
+	transform: rotateY(90deg);
+	transform-origin: left;
+}
+.cactus1B .top-cactus{
+	width: 60px;
+	height: 20px;
+	background: #000;
+	position: absolute;
+	top: -20px;
+	transform: rotateX(90deg);
+	transform-origin: bottom;
+}
+.cactus1B .bottom-cactus{
+	width: 60px;
+	height: 20px;
+	background: #111;
+	position: absolute;
+	top: 20px;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+}
+	
+
+.joinA{
+	position: relative;
+}
+.joinB{
+	position: relative;
+	left: 50px;
+	transform: rotateY(45deg);
+}
+.joinC{
+	position: relative;
+	left: 20px;	
+	transform: rotateY(90deg) translateX(-70px);
+}
+
